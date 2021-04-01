@@ -32,9 +32,9 @@ Vless 性能更加优秀，占用资源更少。
   * 务必替换 `xxx.herokuapp.com` 为 Heroku 分配的项目域名；
   * 务必替换部署时的默认 UUID。
 
-** 流量中转
+**流量中转**
   <summary>可以使用 Cloudflare 的 Workers 来中转流量，配置为：</summary>
-  ```js
+```js
   const SingleDay = 'xxx.herokuapp.com';
   const DoubleDay = 'xxx.herokuapp.com';
   addEventListener(
@@ -53,10 +53,10 @@ Vless 性能更加优秀，占用资源更少。
           )
       }
   )
-  ```
+```
 
 ** Xray 默认配置
-  ```bash
+```bash
   * 协议：Vless
   * 地址：自选 IP
   * 端口：443
@@ -69,4 +69,4 @@ Vless 性能更加优秀，占用资源更少。
   * 底层传输安全：tls
   * 跳过证书验证：false
   * SNI：xxx.workers.dev (Cloudflare Workers 反代地址)
-  ```
+```
